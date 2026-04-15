@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Lead = require('../models/lead');
-const Property = require('../models/property');
+const Lead = require('../models/Lead');
+const Property = require('../models/Property');
 const { protect, authorize } = require('../middleware/auth');
 
 router.post('/', async (req, res) => {

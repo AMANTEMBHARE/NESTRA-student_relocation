@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Property = require('../models/property');
+const Property = require('../models/Property');
 const { protect, authorize } = require('../middleware/auth');
 
 // @GET /api/properties - Search & filter properties

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Review = require('../models/review');
+const Review = require('../models/Review');
 const { protect } = require('../middleware/auth');
 
 router.get('/property/:propertyId', async (req, res) => {
