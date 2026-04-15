@@ -38,4 +38,4 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
 };
 
 //module.exports = mongoose.model('User', userSchema);
-module.exports = mongoose.models.User || mongoose.model('User', userSchema);
+module.exports = mongoose.models.user || mongoose.model('user', userSchema);

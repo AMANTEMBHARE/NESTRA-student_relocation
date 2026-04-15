@@ -93,4 +93,4 @@ propertySchema.index({ 'address.city': 1, 'priceRange.min': 1 });
 propertySchema.index({ isVerified: 1, isActive: 1 });
 
 //module.exports = mongoose.model('Property', propertySchema);
-module.exports = mongoose.models.Property || mongoose.model('Property', propertySchema);
+module.exports = mongoose.models.property || mongoose.model('property', propertySchema);

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const City = require('../models/City');
-const Property = require('../models/Property');
+const City = require('../models/city');
+const Property = require('../models/property');
 
 router.get('/', async (req, res) => {
   try {

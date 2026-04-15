@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const Property = require('../models/Property');
-const User = require('../models/User');
-const Lead = require('../models/Lead');
-const Review = require('../models/Review');
+const Property = require('../models/property');
+const User = require('../models/user');
+const Lead = require('../models/lead');
+const Review = require('../models/review');
 const { protect, authorize } = require('../middleware/auth');
 
 const adminOnly = [protect, authorize('admin')];
